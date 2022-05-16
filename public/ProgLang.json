@@ -1,0 +1,22 @@
+{
+  "Html": {
+    "title": "<h1>Hello World</h1>",
+    "body": "<p>Paragraphing is cool, programming also",
+    "purpose": "programming"
+  },
+  "Css": {
+    "title": "width: 30px",
+    "body": "align-items: center",
+    "purpose": "prettier"
+  },
+  "Javascript": {
+    "title": "condition",
+    "body": "true false",
+    "purpose": "shrinking"
+  },
+  "React": {
+    "title": "Hook",
+    "body": "useEffect",
+    "purpose": "programming"
+  }
+}
