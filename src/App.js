@@ -6,6 +6,8 @@ import { useEffect, useState } from "react";
 import NotFound from "./components/NotFound";
 import Content from "./components/Content";
 import Contents from "./components/Contents";
+import Footer from "./components/Footer";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   const [langs, setLangs] = useState({});
@@ -25,6 +27,7 @@ function App() {
     <>
       <MainHeader data={langs} />
       <Routes>
+        <></>
         {titles &&
           titles.map((title, i) => (
             <Route
@@ -38,7 +41,10 @@ function App() {
                     key={i}
                     path={`${innerTitle}`}
                     element={
-                      <Content data={langs[`${title}`][`${innerTitle}`]} />
+                      <Content
+                        data={langs[`${title}`][`${innerTitle}`]}
+                        title={langs[`${title}`]}
+                      />
                     }
                   />
                 );
@@ -47,6 +53,7 @@ function App() {
           ))}
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <Footer />
     </>
   );
 }
