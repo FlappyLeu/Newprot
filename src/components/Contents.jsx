@@ -2,14 +2,13 @@ import React, { useState } from "react";
 import { Outlet } from "react-router";
 import { Link } from "react-router-dom";
 import { Row, Col, Container } from "react-bootstrap";
-import { propTypes } from "react-bootstrap/esm/Image";
 
 export default function Contents({ data }) {
   const style = {
     display: "flex",
   };
   return (
-    <div className="contents">
+    <div>
       <Container>
         <Row>
           <Col>
